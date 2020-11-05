@@ -11,9 +11,8 @@ public class ThreadExtender extends Thread {
 
     @Override
     public void run() {
-        int value = 0;
         while (counter.getValue() < COUNT) {
-            value = counter.increment();
+            int value = counter.increment();
             log.info(Thread.currentThread().getName() + " value = " + value);
         }
     }
