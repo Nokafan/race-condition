@@ -4,6 +4,7 @@ import lombok.extern.log4j.Log4j;
 @Log4j
 @Data
 public class Counter {
+    private int count = 100;
     private int value = 0;
 
     public int increment() {
